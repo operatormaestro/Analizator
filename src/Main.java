@@ -10,7 +10,7 @@ public class Main {
     public static int maxA = 0;
     public static int maxB = 0;
     public static int maxC = 0;
-    
+
     public static void main(String[] args) throws InterruptedException {
         String[] texts = new String[10_00];
         for (int i = 0; i < texts.length; i++) {
@@ -58,9 +58,9 @@ public class Main {
         lookingC.interrupt();
         putter.interrupt();
 
-        System.out.println("countA = " + maxA);
-        System.out.println("countB = " + maxB);
-        System.out.println("countC = " + maxC);
+        System.out.println("Максимальное количество символов 'a' в строке из массива сгенерированных строк = " + maxA);
+        System.out.println("Максимальное количество символов 'b' в строке из массива сгенерированных строк = " + maxB);
+        System.out.println("Максимальное количество символов 'c' в строке из массива сгенерированных строк = " + maxC);
     }
 
     public static String generateText(String letters, int length) {
